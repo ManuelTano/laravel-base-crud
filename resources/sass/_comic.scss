@@ -1,0 +1,67 @@
+
+#white {
+    background-color: $white;
+}
+
+.bg-blue {
+    background-color: $blue;
+    height: 100px;
+    width: 100%;
+}
+
+
+.small-container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.thumb {
+    margin-top: -450px;
+    border: 1px solid $white;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.bg-green {
+    background-color: #55BA59;
+}
+
+.green {
+    color: #B5F789
+}
+
+.margin {
+    margin-left: 0px;
+}
+
+.border-right {
+    border-right: 2px solid green;
+}
+
+.border-green {
+    border-bottom: 2px solid green;
+}
+
+#grigio {
+    background-color: #F6F6F6;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.book {
+    background-color: #00A9D9;
+    padding: 0px 5px;
+    color: white;
+    position: absolute;
+    top: 352px;
+    left: 441px;
+}
+
+.relative {
+    position: relative;
+
+}

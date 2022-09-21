@@ -1,19 +1,20 @@
+
 <?php
 
-use Illuminate\Database\Seeder;
 use App\Comic;
+use Illuminate\Database\Seeder;
+
 class ComicTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
      *
-     * @return 
+     * @return void
      */
     public function run()
     {
         $comics = config('comics');
-
-        foreach($comics as $comic){
+        foreach ($comics as $comic) {
             $new_comic = new Comic();
             $new_comic->fill($comic);
             $new_comic->save();

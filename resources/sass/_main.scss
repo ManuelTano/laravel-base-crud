@@ -1,0 +1,22 @@
+#jumbo {
+    background-image: url(../images/jumbotron.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+}
+
+.bottone {
+    margin-top: -80px;
+    font-size: 30px;
+}
+
+.shop {
+    background-color: $blue;
+    padding: 25px;
+  }
+  
+.shop .col-2 img {
+    width: 25%;
+}
+

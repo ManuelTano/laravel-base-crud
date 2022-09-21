@@ -1,0 +1,47 @@
+header {
+    background-color: $white;
+    max-height: 160px;
+}
+
+.header-top {
+    background-color: $blue;
+    height: 25px;
+    ul li {
+        font-size: 12px;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+
+    li {
+        height: 100%;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+}
+
+a {
+    color: $gray;
+    padding: 0px 10px;
+    text-decoration: none;
+
+    &:hover {
+        color: $blue;
+        border-bottom: 3px solid $blue;
+    }
+}
+
+.ul-header {
+    margin-left: 135px;
+}
