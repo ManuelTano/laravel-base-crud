@@ -5,7 +5,7 @@
         <div class="container">
             <div class="d-flex flex-wrap justify-content-center py-5">
                 @forelse($comics as $comic)
-                    <div class="col-3 text-center align-items-center my-4">
+                    <div class="col-3 text-center align-items-center my-4 text-white">
                         <a href="{{ route('comics.show', $comic->id) }}">
                             <img src="{{ $comic->thumb }}" alt="{{ $comic->title }}" class="comics">
                         </a>
