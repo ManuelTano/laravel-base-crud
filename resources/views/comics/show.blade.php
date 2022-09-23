@@ -97,7 +97,8 @@
                 <div class="col-6 justify-content-end text-end d-flex">
                     <a class="btn btn-warning text-white mx-2" href="{{ route('comics.edit', $comic->id) }}">Modifica </a>
 
-                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    <form class='delete-form' action="{{ route('comics.destroy', $comic->id) }}" method="POST"
+                        data-name="{{ $comic->title }}">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Cancella</button>
@@ -105,12 +106,17 @@
                 </div>
             </div>
         </div>
-
-        <div class="row">
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-        </div>
     </section>
+
+    <script>
+        const deleteForms = document.querySelectorAll('.delete-form');
+        deleteForms.forEach(form => {
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                const comicTitle = form.getAttribute('data-name');
+                const hasConfirmed = confirm(`Sei sicuro di volere eliminare il comic ${comicTitle}?`)
+                if (hasConfirmed) form.submit();
+            });
+        });
+    </script>
 @endsection
